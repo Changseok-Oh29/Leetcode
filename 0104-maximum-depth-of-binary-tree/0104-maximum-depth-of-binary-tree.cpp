@@ -10,6 +10,7 @@
  * };
  */
 
+/*
 // BFS
 #include <queue>
 
@@ -38,13 +39,14 @@ public:
         return depth;
     }
 };
+*/
 
-/*
+
 //DFS
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if (root == nullptr) return -1;
+        if (root == nullptr) return 0;
 
         int LDepth = maxDepth(root->left);
         int RDepth = maxDepth(root->right);
@@ -52,4 +54,3 @@ public:
         return max(LDepth, RDepth) + 1;
     }
 };
-*/
